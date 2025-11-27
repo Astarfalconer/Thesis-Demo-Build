@@ -9,7 +9,7 @@ This repository contains the demo build, documentation, and supporting materials
 ### 📄 Thesis Write-Up (PDF)
 A complete dissertation covering background research, methodology, model development, Unity integration, evaluation, and conclusions.
 
-**Located in:** `Docs/thesis write-up creative computing 2025 II.pdf`
+**Located in:** `Docs/thesis write-up.pdf`
 
 ---
 
