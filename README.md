@@ -16,7 +16,7 @@ A complete dissertation covering background research, methodology, model develop
 ### 🗂️ Weekly Development Logbook (PDF)
 A nine-week development journal documenting major milestones, challenges, and technical decisions.
 
-**Located in:** `Docs/Development_Logbook.pdf`
+**Located in:** `Docs/Joel Thesis LoG II.pdf`
 
 ---
 
