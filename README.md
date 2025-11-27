@@ -27,7 +27,7 @@ A short demonstration of:
 - the memory/lore retrieval system  
 - context assembly and inference  
 
-**Located in:** `Docs/Demo_Video.mp4`
+**Located in:** `Docs/C4554NDR4_SMOKE_TEST 2025-11-27 03-08-15.mov`
 
 ---
 
