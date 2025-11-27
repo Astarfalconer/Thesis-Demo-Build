@@ -1,83 +1,71 @@
 # Thesis-Demo-Build
 
-This repository contains the full demo build, documentation, and supporting materials for my master’s thesis project exploring an AI-driven CRPG companion system built using Unity and a fine-tuned large language model (LLM).
+This repository contains the demo build, documentation, and supporting materials for my master's thesis project exploring an AI-driven CRPG companion system built using Unity and a fine-tuned large language model.
 
-Included Documentation
-Thesis Write-Up (PDF)
+---
 
-A complete dissertation covering:
+## **Included Documentation**
 
-background and related work
+### 📄 Thesis Write-Up (PDF)
+A complete dissertation covering background research, methodology, model development, Unity integration, evaluation, and conclusions.
 
-methodology
+**Located in:** `Docs/Thesis.pdf`
 
-model training and architecture
+---
 
-Unity integration
+### 🗂️ Weekly Development Logbook (PDF)
+A nine-week development journal documenting major milestones, challenges, and technical decisions.
 
-evaluation with participants
+**Located in:** `Docs/Development_Logbook.pdf`
 
-conclusions and future work
+---
 
-Located in: Docs/Thesis.pdf
+### 🎞️ Demo Video (2–3 Minutes)
+A short demonstration of:
+- gameplay loop  
+- the AI companion responding in-engine  
+- the memory/lore retrieval system  
+- context assembly and inference  
 
-Weekly Development Logbook (PDF)
+**Located in:** `Docs/Demo_Video.mp4`
 
-A nine-week development diary documenting key milestones, technical decisions, and problem-solving throughout production.
+---
 
-Located in: Docs/Development_Logbook.pdf
+## **Running the Project**
 
-Demo Video (2–3 minutes)
+### **Option A — Download the Executable**
+A ready-to-run build is available here:
 
-A short demonstration of the prototype, showing:
+👉 *(Insert your downloadable build link here)*
 
-movement and basic gameplay loop
+---
 
-the AI companion interacting with the player
+### **Option B — Open the Unity Project**
+1. Clone or download this repository.  
+2. Open **Unity Hub**.  
+3. Click **Add Project** and select the folder.  
+4. Use the Unity Editor version listed in:  
+   `ProjectSettings/ProjectVersion.txt`  
+5. Open the main scene and click **Play**.
 
-in-engine inference and context system
+---
 
-memory/lore retrieval schema
+## **External Assets Used**
 
-Located in: Docs/Demo_Video.mp4
+### **Character Models**
+- Generated using **Radiant AI / Hyper3D** for placeholder prototyping.
 
-Running the Project
+### **Unity Asset Store Packages**
+- **Modular Sci-Fi Pack**  
+- **Sci-Fi Streets Environment Pack**  
 
-You can either:
+Used for environmental prototyping only.
 
-A) Download and run the executable
+---
 
-A built version of the demo is available here:
-(place your link here once uploaded)
+## **Academic Integrity Note**
+Some structural text (including this README) was lightly edited using LLM assistance.  
+All implementation, system architecture, dataset design, training, and written analysis within the thesis were produced by the project author.
 
-or
+---
 
-B) Open the Unity project manually
-
-Clone or download this repository.
-
-Open Unity Hub.
-
-Add the project folder.
-
-Use the Unity Editor version listed in ProjectSettings/ProjectVersion.txt.
-
-Open the main scene and press Play.
-
-External Assets Used
-Character Models
-
-Generated via Radiant AI / Rodent-Hyper3D (placeholder prototyping).
-
-Unity Asset Store Packages
-
-Modular Sci-Fi Pack
-
-Sci-Fi Streets Environment Pack
-
-(Used solely for environmental prototyping.)
-
-Academic Integrity Note
-
-Some structural text (including this README) was lightly edited using LLM assistance.
-All implementation, systems design, training, and written analysis in the thesis were produced by the project author.
