@@ -33,6 +33,8 @@ A short demonstration of:
 
 ## **Running the Project**
 
+For the model to run I will need to turn the Hugging Face Endpoint on for you
+Please contact me at JoelFalconer@outlook.com to set a date and time for me to run it
 ### **Option A — Download the Executable**
 A ready-to-run build is available here:
 
