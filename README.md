@@ -36,7 +36,7 @@ A short demonstration of:
 ### **Option A — Download the Executable**
 A ready-to-run build is available here:
 
-👉 *(Insert your downloadable build link here)*
+👉 *[Link to executable](https://drive.google.com/file/d/1OE5HjETSNr3GJtl0JsrwR5NxKF7eKgNr/view?usp=drive_link)*
 
 ---
 
