@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b38e389f571b24eb816a5d77d7c51b, type: 3}
+  m_Name: Merchant
+  m_EditorClassIdentifier: 
+  npcName: Merchant
+  npcPortrait: {fileID: 21300000, guid: 244a5f6d3f7c287428f51924f20e8a8a, type: 3}
+  dialogueLines:
+  - Greetings, child of mars...
+  - I suspect you will have need of my services in the future...
+  - You seek acess to the Abell Comm center no? I can help with that..
+  - Come now child, you will need assistance acessing the Comm center...
+  - Zero...Lost child from mars and her loyal automoton serial number C4554NDR4 also
+    known as "Cassandra" charmed I'm sure..
+  - Listen friend I offer aid on your quest. you'll never get pass the Comm center's
+    security field without either my Skelliton key or an Abell pass card
+  - I heard tell of your arrival from the other brokers at the Carousel bar, You
+    mean to lift some data for our mutual friend Kade..
+  - Please comeback when you are ready to deal
+  - The key is of my own making, it will get you in but Abell agents don't take too
+    kindly to interlopers, you will almost certainly need to fight your way through
+    to acess the data terminal. All I ask is that you make a copy of the data and
+    bring it back to me
+  - I unfortunately don't have one on hand but I heard those gangers down the way
+    hit an Abell transport a couple weeks back. They most certainly would have at
+    the most took one incase they needed to breach an Abell facility or at the least
+    as a keep sake. With it you could stroll right past the guards stationed at the
+    comm center.
+  - Be seeing you Zero..
+  - 'I am a simple trader of goods ,legal or not, of tech and secrets... '
+  - I had hoped you would bargan with me for my key, I assure you the deal is mutually
+    benificial
+  - ...
+  autoProgressLines: 0101010101010101010101010101
+  endDialogueLines: 0000000000000000000000000001
+  typingSpeed: 0.02
+  voiceSound: {fileID: 0}
+  voicePitch: 1
+  autoProgressDelay: 1.5
+  dialogueChoices:
+  - dialogueIndex: 1
+    choices:
+    - What? What are you getting at?
+    - I'm good strange mask-lady, Don't need what your selling
+    - Huh, you know me or something?
+    nextDialogueIndexs: 020000000300000004000000
+    choiceEvents:
+    - keys: []
+  - dialogueIndex: 2
+    choices:
+    - Okay, not even gonna ask how you know that, Fuck it can you help?
+    - Explain how you know that?
+    - Nah I'm good
+    nextDialogueIndexs: 050000000600000007000000
+    choiceEvents: []
+  - dialogueIndex: 5
+    choices:
+    - So you got this Key, what are you asking for it? and how does it get me in?
+    - So how do I get one of those pass cards?
+    nextDialogueIndexs: 0800000009000000
+    choiceEvents: []
+  - dialogueIndex: 8
+    choices:
+    - Fine...You got a deal I'll bring you back a copy of the data I steal
+    - Thanks but no thanks, I'll try my luck elsewhere
+    - And What about that Pass card
+    nextDialogueIndexs: 0a0000000700000009000000
+    choiceEvents: []
+  - dialogueIndex: 3
+    choices:
+    - Okayyy, you offering us help then or what??
+    - Have you been following us??? How do you know that??
+    - Nope Lmao not even gonna entertain this..
+    nextDialogueIndexs: 050000000600000007000000
+    choiceEvents: []
+  - dialogueIndex: 6
+    choices:
+    - Okay so your connected, What are you offering?
+    nextDialogueIndexs: 05000000
+    choiceEvents: []
+  - dialogueIndex: 4
+    choices:
+    - You've done your homework...who are you? and what do you want?
+    - Fuck this... [Leave Conversation]
+    - Okay why do I feel like you really want to sell me something??
+    nextDialogueIndexs: 0b0000000700000005000000
+    choiceEvents: []
+  - dialogueIndex: 11
+    choices:
+    - Okay so what do you have to offer me??
+    - Fuck this... [Leave Conversation]
+    nextDialogueIndexs: 0500000007000000
+    choiceEvents: []
+  - dialogueIndex: 9
+    choices:
+    - Maybe I'll try my luck with those gangers, rather them then Abell
+    - And what about that key of yours
+    nextDialogueIndexs: 0c00000008000000
+    choiceEvents: []
+  - dialogueIndex: 12
+    choices:
+    - Fine I'll bite tell me about the key
+    - nah, be seeing you...
+    nextDialogueIndexs: 0800000007000000
+    choiceEvents: []
+  - dialogueIndex: 10
+    choices:
+    - '[Take Skeleton key]'
+    nextDialogueIndexs: 0d000000
+    choiceEvents:
+    - keys:
+      - GiveSkellKey
+  - dialogueIndex: 7
+    choices:
+    - '[Leave]'
+    nextDialogueIndexs: 0d000000
+    choiceEvents:
+    - keys:
+      - RejectMerchant
