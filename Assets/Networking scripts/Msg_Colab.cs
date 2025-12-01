@@ -3,23 +3,32 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Networking;
-using static System.Net.WebRequestMethods;
+using System.IO;
+
 public class Msg_Colab : MonoBehaviour
 {
     [SerializeField]
     TypewriterEffect typewriterEffect;
     [SerializeField]
     TextMeshProUGUI textDisplay;
-    string APIKey = "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";
+    string APIKey;
     public class ColabResponse
     {
         public string response;
     }
-    [SerializeField]
-    string baseURL = "https://3a864cc20a17.ngrok-free.app";
+
+    public class HFConfig
+    {
+        public string api_key;
+        
+    }
+    
     [SerializeField]
     ViewTranscript viewTranscript;
-
+    private void Awake()
+    {
+        APIKey = LoadAPIKey();
+    }
     public IEnumerator PostToColab(string json)
     {
 
@@ -117,30 +126,17 @@ public class Msg_Colab : MonoBehaviour
         public HFChoices[] choices;
     }
     
-    IEnumerator Upload(string json)
+    
+    private string LoadAPIKey()
     {
-        string url = baseURL + "/inference";
-        var req = new UnityWebRequest(url, "POST");
-        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
-        req.uploadHandler = new UploadHandlerRaw(bodyRaw);
-        req.downloadHandler = new DownloadHandlerBuffer();
-        req.SetRequestHeader("Content-Type", "application/json");
-        req.timeout = 10;
-        //Debug.Log("Sending request to: " + url);
-        Debug.Log("Payload: " + json);
-        yield return req.SendWebRequest();
-        //Debug.Log("Response Code: " + req.responseCode);
-       // Debug.Log("Body: " + req.downloadHandler.text);
-
-        if (req.result == UnityWebRequest.Result.ConnectionError || req.result == UnityWebRequest.Result.ProtocolError)
+        string path = Path.Combine(Application.streamingAssetsPath,"hf_config.json");
+        if (!File.Exists(path))
         {
-            Debug.LogError("Error: " + req.error);
+            Debug.LogError("API key file not found at: " + path);
         }
-        else
-        {
-            ColabResponse response = JsonUtility.FromJson<ColabResponse>(req.downloadHandler.text);
-            Debug.Log("Parsed Response: " + response.response);
-        }
+        string json = File.ReadAllText(path);
+        HFConfig config = JsonUtility.FromJson<HFConfig>(json);
+        return config.api_key;
     }
 
 }
