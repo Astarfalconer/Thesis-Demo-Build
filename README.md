@@ -50,6 +50,9 @@ A ready-to-run build is available here:
    `ProjectSettings/ProjectVersion.txt`  
 5. Open the main scene and click **Play**.
 
+**Note: Due to hugging face tokens invalidating when exposed on git I have written a config file containing it that isn't in this repo**
+
+
 ---
 
 ## **External Assets Used**
